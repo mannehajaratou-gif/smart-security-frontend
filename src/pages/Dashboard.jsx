@@ -1,3 +1,5 @@
+import CameraFeed from "../components/CameraFeed";
+import Logs from "../components/Logs";
 import { useEffect, useState } from "react"
 
 function Dashboard() {
@@ -5,7 +7,7 @@ function Dashboard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("https://127.0.0.1:8000/logs")
+    fetch("fetch(`${import.meta.env.VITE_API_URL}/logs`)")
       .then(res => res.json())
       .then(data => {
         setLogs(data)

@@ -1,5 +1,5 @@
 // Change this later when backend is deployed
-const API_URL = import.meta.env.VITE_API_URL || "smart-security-backend-production.up.railway.app";
+const API_URL = "https://smart-security-backend-production.up.railway.app";
 
 export async function registerUser(data) {
   const res = await fetch(`${API_URL}/register`, {
