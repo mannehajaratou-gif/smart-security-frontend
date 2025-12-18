@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f1f5f9;
+}
